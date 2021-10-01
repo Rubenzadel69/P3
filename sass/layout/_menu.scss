@@ -12,7 +12,7 @@
     margin-bottom: 2rem;
     height: 2rem;
     align-items: center;
-    justify-content: center;
+    margin-left: 1rem;
     font-weight: bold;
     background-color: $background-menu;
     border-radius: 1rem;
@@ -20,6 +20,17 @@
     padding: 1rem;
     margin-left: 0;
     margin-bottom: 2rem;
+    display: flex;
+    &::before {
+        content: "1";
+        border-radius: 100%;
+        background-color: $background-number;
+        color: white;
+        padding: 2%;
+        align-items: center;
+        position: absolute;
+        left: 0;
+    }
 }
 
 .menu i {
