@@ -1,0 +1,33 @@
+.presentation {
+    background-color: $background-localisation;
+    width: 100%;
+    height: 4rem;
+    &__localisation {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        &__icon {
+            padding-right: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.exploration {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 2rem;
+    h3, p {
+        text-align: center;
+    }
+}
+
+.restaurants {
+    width: 100%;
+    background-color: $background-restaurant;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+

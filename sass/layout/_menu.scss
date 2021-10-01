@@ -1,0 +1,28 @@
+.menu {
+    width: 100%;
+}
+
+.titre_menu {
+    margin-left: 4rem;
+}
+
+
+.menu li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: $background-menu;
+    border-radius: 1rem;
+    width: 90%;
+    padding: 1rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.menu i {
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+}
