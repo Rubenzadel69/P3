@@ -125,11 +125,12 @@ footer img {
   color: white;
 }
 
-body {
-  font-family: "raleway";
-  margin: 0;
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+  body {
+    font-family: "raleway";
+    margin: 0;
+  }
 }
-
 .titre_restaurant {
   margin-left: 2rem;
 }
