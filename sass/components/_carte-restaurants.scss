@@ -1,5 +1,5 @@
 .titre_restaurant { 
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .carte-restaurant {
@@ -17,22 +17,29 @@
             border-top-right-radius: 1rem;
             object-fit: cover;
         }
-            figcaption {
-                display: flex;
-                padding-left: 1rem;
-            }
-            &__text {
-                width: 85%;
-                flex-direction: column;
-                padding-left: -10rem;
-                padding-bottom: -4rem;
-                align-items: flex-start;
-            }
-            figcaption i {
-                width: 10%;
-                align-items: flex-end;
-                padding-right: -4rem;
-                padding-top: 1rem;
-            }
+        figcaption {
+            display: flex;
+            padding-left: 1rem;            
+        }
+        &__text {
+            padding-top: 3%;
+            flex-direction: column;
+            //padding-left: -10rem;
+            //padding-bottom: -4rem;
+            align-items: flex-start;
+            display: block;
+            text-decoration: none;                
+            font-weight:bold;
+            color:black;
+        }
+        &__subtext{
+            font-weight: 200;
+        }
+        figcaption i {
+            width: 10%;
+            align-items: flex-end;
+            padding-right: 1rem;
+            padding-top: 1rem;
+        }
 }
 

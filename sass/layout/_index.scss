@@ -1,7 +1,7 @@
 .presentation__localisation {
     background-color: $background-localisation;
     width: 100%;
-    
+    height: 3rem;
     display: flex;
     text-align: center;
     align-items: center;
@@ -11,18 +11,27 @@
             justify-content: center;
             align-items: center;
         }
+        &__input {
+            border: none;
+            background-color: transparent;
+            color: black;
+        }
 }
 
 .exploration {
-    height: 15rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 6%;
     padding-right: 6%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     text-align: center;
     background-color: $background-exploration;
+    h1 {
+        font-weight: bold;
+    }
 }
 
 .restaurants {

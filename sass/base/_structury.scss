@@ -1,6 +1,10 @@
-@media screen and (min-width:400px) and (max-width: 1000px){
+
     body {
-        font-family: 'raleway';
+        font-family: 'Roboto';
         margin: 0;
+        .footer_titre {
+            font-style: italic;
+            font-weight: bold;
+        }
+
     }
-}

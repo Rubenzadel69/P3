@@ -1,17 +1,17 @@
 .exploration__button {
-    text-align: center;
-    border: 1px black solid;
-    box-shadow: 0 0 10px black;
-    background-color: $background-button;
+    background : linear-gradient(to bottom right, #9356DC 33%, #FF79DA);
     border-radius: 2rem;
     align-items: center;
     justify-content: center;
     height: 3rem;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
     &__push {
         text-align: center;
         cursor: pointer;
         text-decoration: none;
-        font-weight: 600;
         color: white;
     }
 }

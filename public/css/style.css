@@ -38,6 +38,7 @@ footer img {
 .presentation__localisation {
   background-color: #E5E2E2;
   width: 100%;
+  height: 3rem;
   display: flex;
   text-align: center;
   align-items: center;
@@ -48,17 +49,26 @@ footer img {
   justify-content: center;
   align-items: center;
 }
+.presentation__localisation__input {
+  border: none;
+  background-color: transparent;
+  color: black;
+}
 
 .exploration {
-  height: 15rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 6%;
   padding-right: 6%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   text-align: center;
   background-color: #F5F5F5;
+}
+.exploration h1 {
+  font-weight: bold;
 }
 
 .restaurants {
@@ -73,7 +83,7 @@ footer img {
 }
 
 .titre_menu {
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 
 .menu li {
@@ -108,31 +118,54 @@ footer img {
 }
 
 .exploration__button {
-  text-align: center;
-  border: 1px black solid;
-  box-shadow: 0 0 10px black;
-  background-color: #DE29CB;
+  background: linear-gradient(to bottom right, #9356DC 33%, #FF79DA);
   border-radius: 2rem;
   align-items: center;
   justify-content: center;
   height: 3rem;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
 }
 .exploration__button__push {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  font-weight: 600;
   color: white;
 }
 
-@media screen and (min-width: 400px) and (max-width: 1000px) {
-  body {
-    font-family: "raleway";
-    margin: 0;
-  }
+.entete_page {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
+.entete_page__logo {
+  text-align: center;
+}
+.entete_page i {
+  text-align: left;
+}
+
+.menu_carte {
+  background-color: #F5F5F5;
+}
+.menu_carte__nom {
+  display: flex;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+}
+body .footer_titre {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .titre_restaurant {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .carte-restaurant {
@@ -156,16 +189,21 @@ footer img {
   padding-left: 1rem;
 }
 .carte-restaurant__text {
-  width: 85%;
+  padding-top: 3%;
   flex-direction: column;
-  padding-left: -10rem;
-  padding-bottom: -4rem;
   align-items: flex-start;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.carte-restaurant__subtext {
+  font-weight: 200;
 }
 .carte-restaurant figcaption i {
   width: 10%;
   align-items: flex-end;
-  padding-right: -4rem;
+  padding-right: 1rem;
   padding-top: 1rem;
 }
 
