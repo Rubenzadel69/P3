@@ -1,0 +1,53 @@
+.menu_carte_nom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
+    font-style: italic;
+    padding-top: 1.5rem;
+    h1 {
+        padding-right: 4rem;
+        font-family: Shrikhand;
+
+    }
+    i {
+        font-size: 150%;
+    }
+}
+
+.menu_carte {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    background-color: $background-menu-carte;
+    //position: absolute;
+    padding-bottom: 3rem;
+    
+
+    &__choix {
+        width: 85%;
+        margin-left: 1rem;
+        background-color: $background-choix-carte;
+        //line-height: 0.5rem;
+        border-radius: 1rem;
+        padding-left: 1rem;
+        aside {
+            display: flex;
+        }
+        &__prix {
+            padding-right: 1rem;
+        }
+        h3 {
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+
+.entree, .plats, .desserts {
+    padding-bottom: 1rem;
+    h2 {
+        padding-left: 1rem;
+    }
+}

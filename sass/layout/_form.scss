@@ -1,7 +1,8 @@
 .exploration__button {
-    background : linear-gradient(to bottom right, #9356DC 33%, #FF79DA);
+    background : linear-gradient(to bottom right,#FF79DA 33%, #9356DC);
     border-radius: 2rem;
     align-items: center;
+    text-align: center;
     justify-content: center;
     height: 3rem;
     width: 60%;
@@ -13,5 +14,6 @@
         cursor: pointer;
         text-decoration: none;
         color: white;
+        align-items: center;
     }
 }

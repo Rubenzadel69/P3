@@ -1,11 +1,12 @@
 .menu {
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .titre_menu {
     margin-left: 1rem;
+    //font-weight: Shrikhand;
 }
-
 
 .menu li {
     list-style-type: none;
@@ -16,11 +17,13 @@
     font-weight: bold;
     background-color: $background-menu;
     border-radius: 1rem;
-    width: 90%;
-    padding: 1rem;
+    width: 80%;
+    padding-left: 1rem;
+    padding-right: 2rem;
     margin-left: 0;
     margin-bottom: 2rem;
     display: flex;
+    height: 5rem;
     &::before {
         content: "1";
         border-radius: 100%;
@@ -29,7 +32,7 @@
         padding: 2%;
         align-items: center;
         position: absolute;
-        left: 0;
+        left: 29px;
     }
 }
 
