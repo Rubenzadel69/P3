@@ -21,30 +21,44 @@
     height: 100%;
     background-color: $background-menu-carte;
     //position: absolute;
-    
     padding-bottom: 3rem;
-    &__choix {
-        width: 85%;
-        margin-left: 1rem;
-        background-color: $background-choix-carte;
-        //line-height: 0.5rem;
-        border-radius: 1rem;
-        padding-left: 1rem;
-        aside {
-            display: flex;
-        }
-        &__prix {
-            padding-right: 1rem;
-        }
-        h3 {
-            padding-top: 0.5rem;
-        }
+    position: sticky;
+    margin-top: -4rem;
+}
+
+.carte_choix {
+    width: 85%;
+    margin-left: 1rem;        
+    background-color: $background-choix-carte;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    margin-bottom: 1rem;
+    &__titre {
+        flex-direction: column;
+        align-items: flex-start;
+        display: block;
+        text-decoration: none;                
+        font-weight:bold;
+        color:black;
     }
+    &__descriptif {
+        display: block;
+        font-weight: 150;
+        align-items: center;
+    }
+    .figcaption_right {
+        width: 10%;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        display: block;
+    }    
 }
 
 .entree, .plats, .desserts {
     padding-bottom: 1rem;
     h2 {
         padding-left: 1rem;
+        font-weight: 200;
     }
 }

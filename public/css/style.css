@@ -17,6 +17,10 @@ footer li {
   padding-top: 0.5rem;
   margin-left: -1rem;
 }
+footer li a {
+  color: white;
+  text-decoration: none;
+}
 footer i {
   width: 5%;
   padding-right: 0.5rem;
@@ -119,7 +123,6 @@ footer i {
 .exploration__button {
   background: linear-gradient(to bottom right, #FF79DA 33%, #9356DC);
   border-radius: 2rem;
-  align-items: center;
   text-align: center;
   justify-content: center;
   height: 3rem;
@@ -181,22 +184,37 @@ footer i {
   height: 100%;
   background-color: #F5F5F5;
   padding-bottom: 3rem;
+  position: sticky;
+  margin-top: -4rem;
 }
-.menu_carte__choix {
+
+.carte_choix {
   width: 85%;
   margin-left: 1rem;
   background-color: white;
   border-radius: 1rem;
   padding-left: 1rem;
-}
-.menu_carte__choix aside {
   display: flex;
+  margin-bottom: 1rem;
 }
-.menu_carte__choix__prix {
+.carte_choix__titre {
+  flex-direction: column;
+  align-items: flex-start;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.carte_choix__descriptif {
+  display: block;
+  font-weight: 150;
+  align-items: center;
+}
+.carte_choix .figcaption_right {
+  width: 10%;
   padding-right: 1rem;
-}
-.menu_carte__choix h3 {
-  padding-top: 0.5rem;
+  padding-top: 2rem;
+  display: block;
 }
 
 .entree, .plats, .desserts {
@@ -204,6 +222,7 @@ footer i {
 }
 .entree h2, .plats h2, .desserts h2 {
   padding-left: 1rem;
+  font-weight: 200;
 }
 
 .photo_restaurant {
