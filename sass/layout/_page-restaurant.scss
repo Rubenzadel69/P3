@@ -8,7 +8,6 @@
     h1 {
         padding-right: 4rem;
         font-family: Shrikhand;
-
     }
     i {
         font-size: 150%;
@@ -22,9 +21,8 @@
     height: 100%;
     background-color: $background-menu-carte;
     //position: absolute;
-    padding-bottom: 3rem;
     
-
+    padding-bottom: 3rem;
     &__choix {
         width: 85%;
         margin-left: 1rem;
@@ -43,7 +41,6 @@
         }
     }
 }
-
 
 .entree, .plats, .desserts {
     padding-bottom: 1rem;

@@ -21,10 +21,6 @@ footer i {
   width: 5%;
   padding-right: 0.5rem;
 }
-footer img {
-  padding-left: 1rem;
-  color: white;
-}
 
 .footer_titre {
   font-weight: bold;
@@ -148,7 +144,6 @@ footer img {
 }
 .entete_page__logo {
   text-align: center;
-  padding-left: 4rem;
 }
 .entete_page i {
   text-align: left;
@@ -265,7 +260,7 @@ body .footer_titre {
 .carte-restaurant__subtext {
   font-weight: 200;
 }
-.carte-restaurant figcaption i {
+.carte-restaurant .figcaption_right {
   width: 10%;
   align-items: flex-end;
   padding-right: 1rem;
