@@ -79,49 +79,110 @@ footer i {
 }
 
 .menu {
-  width: 100%;
-  padding-bottom: 2rem;
+  margin-left: 2%;
+  margin-bottom: 10%;
+}
+.menu .titre_menu {
+  font-size: 1.8em;
+  padding-left: 4%;
+  text-align: left;
+}
+.menu p {
+  font-size: 1em;
+  font-weight: bold;
+  width: 87%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px lightgrey;
+}
+.menu span {
+  color: white;
+  background-color: #9356DC;
+  padding: 6px 11px;
+  border-radius: 100%;
+  margin-right: 25px;
+  margin-left: -15px;
+  font-size: 1em;
+}
+.menu__choix {
+  background-color: #F5F5F5;
+  padding: 30px 0;
+  margin-bottom: 25px;
+}
+.menu__choix i {
+  color: grey;
+  padding-right: 35px;
+  padding-left: 0;
+}
+
+/*
+.menu {
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .titre_menu {
-  margin-left: 1rem;
+    margin-left: 1rem;
+    //font-weight: Shrikhand;
 }
 
-.menu li {
-  list-style-type: none;
-  margin-bottom: 2rem;
-  height: 2rem;
-  align-items: center;
-  margin-left: 1rem;
-  font-weight: bold;
-  background-color: #F5F5F5;
-  border-radius: 1rem;
-  width: 80%;
-  padding-left: 1rem;
-  padding-right: 2rem;
-  margin-left: 0;
-  margin-bottom: 2rem;
-  display: flex;
-  height: 5rem;
-}
-.menu li::before {
-  content: "1";
-  border-radius: 100%;
-  background-color: #9356DC;
-  color: white;
-  padding: 2%;
-  align-items: center;
-  position: absolute;
-  left: 29px;
-}
+.menu .choix_menu {
+    display: flex;
+    margin-bottom: 2rem;
+    height: 2rem;
+    align-items: center;
+    margin-left: 1rem;
+    font-weight: bold;
 
+    border-radius: 1rem;
+    width: 80%;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    height: 5rem;
+    span {
+        background-color: $background-number;
+        border-radius: 100%;
+        color: white;
+        padding: 10px 10px;
+        align-items: center;
+    }
+    /*&::before {
+        content: "1";
+        border-radius: 100%;
+        background-color: $background-number;
+        color: white;
+        padding: 2%;
+        align-items: center;
+        position: absolute;
+        left: 29px;
+    }
+    i {
+        background-color: $background-menu;
+
+    }
+}*/
+/*
 .menu i {
-  margin-right: 1.5rem;
-  margin-left: 1rem;
-}
 
+    height: 4rem;
+    align-items: center;
+
+    font-weight: bold;
+    display: flex;
+    border-radius: 1rem;
+
+
+
+
+}*/
 .exploration__button {
-  background: linear-gradient(to bottom right, #FF79DA 33%, #9356DC);
+  display: block;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 2rem;
   text-align: center;
   justify-content: center;
@@ -132,11 +193,13 @@ footer i {
   border: none;
 }
 .exploration__button__push {
-  text-align: center;
+  display: block;
+  padding: 2% 2%;
   cursor: pointer;
   text-decoration: none;
   color: white;
   align-items: center;
+  width: 70;
 }
 
 .entete_page {
@@ -167,7 +230,6 @@ footer i {
   width: 100%;
   padding-left: 1rem;
   font-style: italic;
-  padding-top: 1.5rem;
 }
 .menu_carte_nom h1 {
   padding-right: 4rem;
@@ -215,14 +277,20 @@ footer i {
   padding-right: 1rem;
   padding-top: 2rem;
   display: block;
+  font-weight: 300;
 }
 
 .entree, .plats, .desserts {
   padding-bottom: 1rem;
 }
 .entree h2, .plats h2, .desserts h2 {
-  padding-left: 1rem;
   font-weight: 200;
+  font-size: 1em;
+  padding-left: 6%;
+  text-align: left;
+}
+.entree h2 .line, .plats h2 .line, .desserts h2 .line {
+  border-bottom: 0.2em solid #99E2D0;
 }
 
 .photo_restaurant {
@@ -244,7 +312,9 @@ body .footer_titre {
 }
 
 .titre_restaurant {
-  margin-left: 1rem;
+  font-size: 1.8em;
+  padding-left: 4%;
+  text-align: left;
 }
 
 .carte-restaurant {
@@ -268,13 +338,14 @@ body .footer_titre {
   padding-left: 1rem;
 }
 .carte-restaurant__text {
-  padding-top: 3%;
+  padding-top: 2%;
   flex-direction: column;
   align-items: flex-start;
   display: block;
   text-decoration: none;
   font-weight: bold;
   color: black;
+  line-height: 1.6rem;
 }
 .carte-restaurant__subtext {
   font-weight: 200;

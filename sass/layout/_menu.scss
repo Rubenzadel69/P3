@@ -1,3 +1,46 @@
+
+.menu {
+    margin-left: 2%;
+    margin-bottom: 10%;
+    .titre_menu {
+        font-size: 1.8em;
+        padding-left: 4%;
+        text-align: left;
+    }
+    p {
+        font-size: 1em;
+        font-weight: bold;
+        width: 87%;   
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+        border-radius: 25px;
+        box-shadow: 5px 5px 15px lightgrey;          
+    }
+    span {
+        color: white;
+        background-color: $background-number;
+        padding: 6px 11px;
+        border-radius: 100%;
+        margin-right: 25px;
+        margin-left: -15px;
+        font-size: 1em;
+    }
+    &__choix {
+        background-color: $background-menu;
+        padding: 30px 0;
+        margin-bottom: 25px;
+            i {
+                color: grey;
+                padding-right: 35px;
+                padding-left: 0;
+            }
+    }        
+}
+  
+//background-color: #f5edff;
+    
+/*
 .menu {
     width: 100%;
     padding-bottom: 2rem;
@@ -8,14 +51,14 @@
     //font-weight: Shrikhand;
 }
 
-.menu li {
-    list-style-type: none;
+.menu .choix_menu {
+    display: flex;
     margin-bottom: 2rem;
     height: 2rem;
     align-items: center;
     margin-left: 1rem;
     font-weight: bold;
-    background-color: $background-menu;
+    
     border-radius: 1rem;
     width: 80%;
     padding-left: 1rem;
@@ -24,7 +67,14 @@
     margin-bottom: 2rem;
     display: flex;
     height: 5rem;
-    &::before {
+    span {
+        background-color: $background-number;
+        border-radius: 100%;
+        color: white;
+        padding: 10px 10px;
+        align-items: center;
+    }
+    /*&::before {
         content: "1";
         border-radius: 100%;
         background-color: $background-number;
@@ -34,9 +84,25 @@
         position: absolute;
         left: 29px;
     }
-}
-
+    i {
+        background-color: $background-menu;
+        
+    }
+}*/
+/*
 .menu i {
-    margin-right: 1.5rem;
-    margin-left: 1rem;
-}
+    
+    height: 4rem;
+    align-items: center;
+    
+    font-weight: bold;
+    display: flex;
+    border-radius: 1rem;
+    
+    
+    
+    
+}*/
+
+
+
