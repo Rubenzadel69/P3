@@ -6,3 +6,14 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+    .header {
+    width: 100%;
+    height: 10rem;
+    &__logo {
+        text-align: center;
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+}
+}

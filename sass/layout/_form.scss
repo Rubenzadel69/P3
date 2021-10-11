@@ -1,5 +1,6 @@
 .exploration__button {
-    display: block;
+    display: flex;
+    align-items: center;
     background : linear-gradient(to bottom right,#FF79DA, #9356DC);
     border-radius: 2rem;
     text-align: center;
@@ -16,7 +17,60 @@
         text-decoration: none;
         color: white;
         align-items: center;
-        width: 70;
-        
+        width: 100%;
+        font-weight: 600;
+    }
+}
+
+
+.command_button {
+    display: flex;
+    align-items: center;
+    background : linear-gradient(to bottom right,#FF79DA, #9356DC);
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: center;
+    height: 3rem;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    &__push {
+        display: block;
+        padding: 2% 2%;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        width: 70%;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .exploration__button, .command_button {
+        display: flex;
+        align-items: center;
+        background : linear-gradient(to bottom right,#FF79DA, #9356DC);
+        border-radius: 2rem;
+        text-align: center;
+        justify-content: center;
+        width: 19%;
+        padding: 2% ;
+        height: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        border: none;
+        &__push {
+            display: block;
+            padding: 2% 2%;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            align-items: center;
+            width: 100%;
+            font-weight: 600;
+        }
     }
 }

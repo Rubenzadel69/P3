@@ -15,7 +15,7 @@
         margin-left: auto;
         margin-top: 0;
         border-radius: 25px;
-        box-shadow: 5px 5px 15px lightgrey;          
+        box-shadow: 5px 5px 15px lightgrey;
     }
     span {
         color: white;
@@ -30,79 +30,58 @@
         background-color: $background-menu;
         padding: 30px 0;
         margin-bottom: 25px;
+        &:hover {
+            background-color: #F5E5F5;
+        }
+            i {
+                color: grey;
+                padding-right: 35px;
+                padding-left: 0;
+                
+            }
+    }        
+}
+  
+@media screen and (min-width: 992px) {
+    .menu {
+    margin-left: 2%;
+    margin-bottom: 8%;
+    .titre_menu {
+        font-size: 2.2em;
+        
+        text-align: center;
+    }
+    p {
+        font-size: 1em;
+        font-weight: bold;
+        width: 40%;   
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3rem;
+        border-radius: 25px;
+        box-shadow: 5px 5px 15px lightgrey;  
+        text-align: center;        
+    }
+    span {
+        color: white;
+        background-color: $background-number;
+        padding: 6px 11px;
+        border-radius: 100%;
+        margin-right: 25px;
+        margin-left: -10px;
+        font-size: 1em;
+    }
+        &__choix {
+            background-color: $background-menu;
+            padding: 30px 0;
+            margin-bottom: 25px;
             i {
                 color: grey;
                 padding-right: 35px;
                 padding-left: 0;
             }
-    }        
-}
-  
-//background-color: #f5edff;
-    
-/*
-.menu {
-    width: 100%;
-    padding-bottom: 2rem;
-}
-
-.titre_menu {
-    margin-left: 1rem;
-    //font-weight: Shrikhand;
-}
-
-.menu .choix_menu {
-    display: flex;
-    margin-bottom: 2rem;
-    height: 2rem;
-    align-items: center;
-    margin-left: 1rem;
-    font-weight: bold;
-    
-    border-radius: 1rem;
-    width: 80%;
-    padding-left: 1rem;
-    padding-right: 2rem;
-    margin-left: 0;
-    margin-bottom: 2rem;
-    display: flex;
-    height: 5rem;
-    span {
-        background-color: $background-number;
-        border-radius: 100%;
-        color: white;
-        padding: 10px 10px;
-        align-items: center;
+        }        
     }
-    /*&::before {
-        content: "1";
-        border-radius: 100%;
-        background-color: $background-number;
-        color: white;
-        padding: 2%;
-        align-items: center;
-        position: absolute;
-        left: 29px;
-    }
-    i {
-        background-color: $background-menu;
-        
-    }
-}*/
-/*
-.menu i {
-    
-    height: 4rem;
-    align-items: center;
-    
-    font-weight: bold;
-    display: flex;
-    border-radius: 1rem;
-    
-    
-    
-    
-}*/
-
+}
 
 

@@ -7,6 +7,7 @@ footer {
         color: white;
         padding-top: 0.5rem;
         margin-left: -1rem;
+        line-height: 1rem;
         a {
             color: white;
             text-decoration: none;
@@ -26,4 +27,40 @@ footer {
     padding-top: 1rem;
     margin: 0;
     font-family: Shrikhand;
+}
+
+@media screen and (min-width: 992px)
+{
+    footer {
+    width: 100%;
+    height: 15rem;
+    background-color: $background-footer;
+    li {
+        list-style-type: none;
+        color: white;
+        line-height: 2rem;
+        padding-top: 0.5rem;
+        padding-left: 2rem;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        i {
+        width: 5%;
+        padding-right: none;
+        }
+    }   
+}
+
+.footer_titre {
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    
+    //padding-left: 1.25rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    margin: 0;
+    font-family: Shrikhand;
+}
 }

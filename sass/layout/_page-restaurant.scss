@@ -1,12 +1,13 @@
 .menu_carte_nom {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding-left: 1rem;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
     font-style: italic;
-    //padding-top: 1.5rem;
+    
     h1 {
-        padding-right: 4rem;
+        //padding-right: 4rem;
         font-family: Shrikhand;
     }
     i {
@@ -20,7 +21,6 @@
     width: 100%;
     height: 100%;
     background-color: $background-menu-carte;
-    
     padding-bottom: 3rem;
     position: sticky;
     margin-top: -4rem;
@@ -34,7 +34,7 @@
     padding-left: 1rem;
     display: flex;
     margin-bottom: 1rem;
-    
+    box-shadow: 5px 5px 15px lightgrey;
     &__titre {
         flex-direction: column;
         align-items: flex-start;
@@ -51,10 +51,11 @@
     .figcaption_right {
         width: 10%;
         padding-right: 1rem;
-        padding-top: 2rem;
-        display: block;
+        //padding-top: 2rem;
+        display: flex;
         font-weight: 300;
-        
+        align-items: end;
+        font-weight:bold;
     }    
 }
 
@@ -65,10 +66,91 @@
     font-size: 1em;
     padding-left: 6%;
     text-align: left;
+    }
     .line {
     border-bottom: 0.2em solid $line;
+    }
+    
 }
+
+
+@media screen and (min-width: 992px)
+{
+    .menu_carte_nom {
+        display: flex;
+        align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    font-style: italic;
+    
+    h1 {
+        //padding-right: 4rem;
+        font-family: Shrikhand;
+    }
+    i {
+        font-size: 150%;
     }
 }
+
+.menu_carte {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    background-color: $background-menu-carte;
+    padding-bottom: 3rem;
+    position: sticky;
+    margin-top: -4rem;
+}
+
+.carte_choix {
+    width: 85%;
+    margin-left: 1rem;        
+    background-color: $background-choix-carte;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 15px lightgrey;
+    &__titre {
+        flex-direction: column;
+        align-items: flex-start;
+        display: block;
+        text-decoration: none;                
+        font-weight:bold;
+        color:black;
+    }
+    &__descriptif {
+        display: block;
+        font-weight: 150;
+        align-items: center;
+    }
+    .figcaption_right {
+        width: 10%;
+        padding-right: 1rem;
+        //padding-top: 2rem;
+        display: flex;
+        font-weight: 300;
+        align-items: end;
+        font-weight:bold;
+    }    
+}
+
+.entree, .plats, .desserts {
+    padding-bottom: 1rem;
+    h2 {
+    font-weight: 200;
+    font-size: 1em;
+    padding-left: 6%;
+    text-align: left;
+    }
+    .line {
+    border-bottom: 0.2em solid $line;
+    }
+    
+}
+}
+
 
 
