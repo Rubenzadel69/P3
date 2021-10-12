@@ -3,17 +3,39 @@
     height: 3rem;
     display: flex;
     align-items: center;
-    //justify-content: center;
+    justify-content: center;
     &__logo {
         text-align: center;    
-        //padding-left: 3rem;
+        font-family: Shrikhand;
     }
     i {
         text-align: left;
         justify-content: left;
-        padding-left: 2rem;
-        padding-right: 3rem;
+        padding-left: -3rem;
+        padding-right: 1rem;
     }
 }
 
+@media screen and (min-width: 992px) {
+    .entete_page {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        //align-items: center;
+        //justify-content: center;
+        &__logo {
+            text-align: center;    
+            font-family: Shrikhand;
+            justify-content: center;
+        }
+        i {
+            
+            text-align: left;
+            justify-content: center;
+            padding-left: 2rem;
+            padding-right: 3rem;
+            font-size: 150%;
+        }
+    }
+}
 

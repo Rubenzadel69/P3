@@ -4,17 +4,18 @@
 }
 .header__logo {
   text-align: center;
+  font-family: Shrikhand;
 }
 
 @media screen and (min-width: 992px) {
   .header {
     width: 100%;
-    height: 10rem;
+    height: 7rem;
   }
   .header__logo {
+    font-family: Shrikhand;
     text-align: center;
-    justify-content: center;
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 }
 footer {
@@ -49,9 +50,20 @@ footer i {
 }
 
 @media screen and (min-width: 992px) {
+  .footer_titre {
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    padding-left: 11rem;
+    padding-top: 2rem;
+    margin: 0;
+    font-family: Shrikhand;
+    font-size: 2rem;
+  }
+
   footer {
     width: 100%;
-    height: 15rem;
+    height: 16rem;
     background-color: #302B30;
   }
   footer li {
@@ -59,25 +71,15 @@ footer i {
     color: white;
     line-height: 2rem;
     padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-left: 10rem;
   }
   footer li a {
     color: white;
     text-decoration: none;
   }
   footer li i {
-    width: 5%;
-    padding-right: none;
-  }
-
-  .footer_titre {
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-    padding-left: 3rem;
-    padding-top: 2rem;
-    margin: 0;
-    font-family: Shrikhand;
+    width: 0;
+    padding-right: 0.2;
   }
 }
 .presentation__localisation {
@@ -115,13 +117,44 @@ footer i {
   font-weight: bold;
 }
 
-.restaurants {
-  width: 100%;
-  background-color: #F5F5F5;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+@media screen and (min-width: 992px) {
+  .presentation__localisation {
+    background-color: #E5E2E2;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .presentation__localisation__icon {
+    padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+  }
+  .presentation__localisation__input {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 100%;
+  }
 
+  .exploration {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    background-color: #F5F5F5;
+  }
+  .exploration h1 {
+    font-weight: bold;
+  }
+}
 .menu {
   margin-left: 2%;
   margin-bottom: 10%;
@@ -167,7 +200,7 @@ footer i {
 @media screen and (min-width: 992px) {
   .menu {
     margin-left: 2%;
-    margin-bottom: 8%;
+    margin-bottom: 7%;
   }
   .menu .titre_menu {
     font-size: 2.2em;
@@ -179,7 +212,7 @@ footer i {
     width: 40%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 3rem;
+    margin-top: 2rem;
     border-radius: 25px;
     box-shadow: 5px 5px 15px lightgrey;
     text-align: center;
@@ -265,6 +298,7 @@ footer i {
     height: 3rem;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 2rem;
     border: none;
   }
   .exploration__button__push, .command_button__push {
@@ -283,17 +317,38 @@ footer i {
   height: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .entete_page__logo {
   text-align: center;
+  font-family: Shrikhand;
 }
 .entete_page i {
   text-align: left;
   justify-content: left;
-  padding-left: 2rem;
-  padding-right: 3rem;
+  padding-left: -3rem;
+  padding-right: 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .entete_page {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+  }
+  .entete_page__logo {
+    text-align: center;
+    font-family: Shrikhand;
+    justify-content: center;
+  }
+  .entete_page i {
+    text-align: left;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    font-size: 150%;
+  }
+}
 .menu_carte {
   background-color: #F5F5F5;
   width: 100%;
@@ -312,6 +367,7 @@ footer i {
 }
 .menu_carte_nom h1 {
   font-family: Shrikhand;
+  text-align: center;
 }
 .menu_carte_nom i {
   font-size: 150%;
@@ -378,9 +434,10 @@ footer i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2.5rem;
+    padding-left: 15%;
+    padding-right: 15%;
     font-style: italic;
+    font-size: 2rem;
   }
   .menu_carte_nom h1 {
     font-family: Shrikhand;
@@ -401,13 +458,15 @@ footer i {
   }
 
   .carte_choix {
-    width: 85%;
+    width: 70%;
     margin-left: 1rem;
     background-color: white;
     border-radius: 1rem;
     padding-left: 1rem;
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
     box-shadow: 5px 5px 15px lightgrey;
   }
   .carte_choix__titre {
@@ -425,7 +484,7 @@ footer i {
   }
   .carte_choix .figcaption_right {
     width: 10%;
-    padding-right: 1rem;
+    padding-right: none;
     display: flex;
     font-weight: 300;
     align-items: end;
@@ -433,13 +492,14 @@ footer i {
   }
 
   .entree, .plats, .desserts {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
   }
   .entree h2, .plats h2, .desserts h2 {
     font-weight: 200;
     font-size: 1em;
-    padding-left: 6%;
+    padding-left: 20%;
     text-align: left;
+    margin-bottom: 2%;
   }
   .entree .line, .plats .line, .desserts .line {
     border-bottom: 0.2em solid #99E2D0;
@@ -455,9 +515,12 @@ body {
   font-family: "Roboto";
   margin: 0;
 }
-body .footer_titre {
-  font-style: italic;
-  font-weight: bold;
+
+.restaurants {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .titre_restaurant {
@@ -511,153 +574,70 @@ body .footer_titre {
 @media screen and (min-width: 992px) {
   .titre_restaurant {
     font-size: 2.2em;
+    padding-left: 4%;
+    text-align: center;
+  }
+
+  .restaurants {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .restaurants .photos {
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .restaurants .photos__photos-haut {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+  }
+  .restaurants .photos__photos-bas {
+    display: flex;
+    flex-direction: row;
     text-align: center;
   }
 
   .carte-restaurant {
     margin-bottom: 8rem;
     width: 40%;
-    height: 13rem;
+    height: 18rem;
     margin: 1rem;
-    padding-bottom: 1rem;
     border-radius: 1rem;
     background-color: white;
-    text-align: center;
   }
   .carte-restaurant a {
     text-decoration: none;
     color: black;
   }
-  .carte-restaurant img {
+  .carte-restaurant a img {
     width: 100%;
     height: 75%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     object-fit: cover;
   }
-  .carte-restaurant figcaption {
+  .carte-restaurant a img figcaption {
     display: flex;
     padding-left: 1rem;
   }
-  .carte-restaurant__text {
+  .carte-restaurant a img figcaption__text {
     padding-top: 2%;
     flex-direction: column;
     align-items: flex-start;
     display: block;
     font-weight: bold;
-    line-height: 1.6rem;
+    line-height: 1rem;
   }
-  .carte-restaurant__subtext {
+  .carte-restaurant a img figcaption__subtext {
     font-weight: 200;
   }
-  .carte-restaurant .figcaption_right {
-    width: 10%;
-    align-items: flex-end;
-    padding-right: 1rem;
-    padding-top: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .titre_restaurant {
-    font-size: 1.8em;
-    padding-left: 4%;
-    text-align: left;
-  }
-
-  .carte-restaurant {
-    margin-bottom: 8rem;
-    width: 90%;
-    height: 13rem;
-    margin: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 1rem;
-    background-color: white;
-  }
-  .carte-restaurant a {
-    text-decoration: none;
-    color: black;
-  }
-  .carte-restaurant img {
-    width: 100%;
-    height: 75%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    object-fit: cover;
-  }
-  .carte-restaurant figcaption {
-    display: flex;
-    padding-left: 1rem;
-  }
-  .carte-restaurant__text {
-    padding-top: 2%;
-    flex-direction: column;
-    align-items: flex-start;
-    display: block;
-    font-weight: bold;
-    line-height: 1.6rem;
-  }
-  .carte-restaurant__subtext {
-    font-weight: 200;
-  }
-  .carte-restaurant .figcaption_right {
-    width: 10%;
-    align-items: flex-end;
-    padding-right: 1rem;
-    padding-top: 1rem;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 992px) {
-  .titre_restaurant {
-    font-size: 2.2em;
-    text-align: center;
-  }
-
-  .restaurant__photos-haut {
-    display: flex;
-    text-align: center;
-  }
-  .restaurant__photos-bas {
-    display: flex;
-    text-align: center;
-  }
-
-  .carte-restaurant {
-    margin-bottom: 8rem;
-    width: 35%;
-    height: 22rem;
-    margin: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 1rem;
-    background-color: white;
-    text-align: center;
-  }
-  .carte-restaurant a {
-    text-decoration: none;
-    color: black;
-  }
-  .carte-restaurant img {
-    width: 100%;
-    height: 75%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    object-fit: cover;
-  }
-  .carte-restaurant figcaption {
-    display: flex;
-    padding-left: 1rem;
-  }
-  .carte-restaurant__text {
-    padding-top: 1%;
-    flex-direction: column;
-    align-items: flex-start;
-    display: block;
-    font-weight: bold;
-    line-height: 1.6rem;
-  }
-  .carte-restaurant__subtext {
-    font-weight: 200;
-  }
-  .carte-restaurant .figcaption_right {
+  .carte-restaurant a img .figcaption_right {
     width: 10%;
     align-items: flex-end;
     padding-right: 1rem;
