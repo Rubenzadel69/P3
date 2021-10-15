@@ -44,43 +44,23 @@
   
 @media screen and (min-width: 992px) {
     .menu {
-    margin-left: 2%;
-    margin-bottom: 7%;
-    .titre_menu {
-        font-size: 2.2em;
-        
-        text-align: center;
-    }
-    p {
-        font-size: 1em;
-        font-weight: bold;
-        width: 40%;   
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 2rem;
-        border-radius: 25px;
-        box-shadow: 5px 5px 15px lightgrey;  
-        text-align: center;        
-    }
-    span {
-        color: white;
-        background-color: $background-number;
-        padding: 6px 11px;
-        border-radius: 100%;
-        margin-right: 25px;
-        margin-left: -10px;
-        font-size: 1em;
-    }
-        &__choix {
-            background-color: $background-menu;
-            padding: 30px 0;
-            margin-bottom: 25px;
-            i {
-                color: grey;
-                padding-right: 35px;
-                padding-left: 0;
-            }
-        }        
+        margin-left: 2%;
+        margin-bottom: 7%;
+        .titre_menu {
+            font-size: 2.2em;
+            text-align: center;
+        }
+        p {
+            width: 40%;   
+            margin-top: 2rem;
+            text-align: center;       
+        }
+        span {
+            color: white;
+            background-color: $background-number;
+            margin-left: -10px;
+            
+        }      
     }
 }
 
