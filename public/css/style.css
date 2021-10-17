@@ -11,11 +11,12 @@
   .header {
     width: 100%;
     height: 6rem;
+    justify-content: center;
   }
   .header__logo {
     font-family: Shrikhand;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 footer {
@@ -281,41 +282,27 @@ footer i {
 }
 .entete_page {
   width: 100%;
-  height: 3rem;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.entete_page a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .entete_page__logo {
-  text-align: center;
   font-family: Shrikhand;
 }
 .entete_page i {
-  text-align: left;
-  justify-content: left;
-  padding-left: -3rem;
-  padding-right: 1rem;
+  position: absolute;
+  left: 10%;
+  font-size: 115%;
 }
 
-@media screen and (min-width: 992px) {
-  .entete_page {
-    width: 100%;
-    height: 5rem;
-    display: flex;
-  }
-  .entete_page__logo {
-    text-align: center;
-    font-family: Shrikhand;
-    justify-content: center;
-  }
-  .entete_page i {
-    text-align: left;
-    justify-content: center;
-    padding-left: 2rem;
-    padding-right: 3rem;
-    font-size: 150%;
-  }
-}
 .menu_carte {
   background-color: #F5F5F5;
   width: 100%;
@@ -363,7 +350,8 @@ footer i {
 }
 .carte_choix:hover > .figcaption_valide {
   width: 30%;
-  transform: scaleX(2);
+  transform: scaleX(1);
+  transform-origin: right;
 }
 .carte_choix .figcaption_left {
   width: 70%;
@@ -379,7 +367,7 @@ footer i {
   font-weight: 150;
   align-items: center;
 }
-.carte_choix .figcaption_right {
+.carte_choix__prix {
   width: 2%;
   display: flex;
   align-items: end;
@@ -397,11 +385,10 @@ footer i {
   justify-content: center;
   display: flex;
   align-items: center;
+  transform: scaleX(0);
+  transition: transform 1s;
 }
 
-/*.carte_choix:hover > .figcaption_valide {
-    width: 20%;
-}*/
 .entree, .plats, .desserts {
   padding-bottom: 1rem;
 }
