@@ -349,18 +349,19 @@ footer i {
   box-shadow: 5px 5px 15px lightgrey;
 }
 .carte_choix:hover > .figcaption_valide {
-  width: 30%;
+  width: 25%;
   transform: scaleX(1);
   transform-origin: right;
 }
 .carte_choix .figcaption_left {
-  width: 70%;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   display: block;
   text-decoration: none;
   font-weight: bold;
   color: black;
+  padding-right: 1%;
 }
 .carte_choix__descriptif {
   display: flex;
@@ -376,7 +377,6 @@ footer i {
 .carte_choix .figcaption_valide {
   width: 0;
   overflow: hidden;
-  margin-left: 20%;
   background-color: #99E2D0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -499,6 +499,7 @@ footer i {
   padding-left: 1rem;
 }
 .carte-restaurant__text {
+  width: 80%;
   padding-top: 2%;
   flex-direction: column;
   align-items: flex-start;
@@ -514,6 +515,15 @@ footer i {
   align-items: flex-end;
   padding-right: 1rem;
   padding-top: 1rem;
+}
+.carte-restaurant i {
+  background-color: transparent;
+  background-clip: icon;
+  -webkit-background-clip: icon;
+}
+.carte-restaurant i:active {
+  transform: scaleX(1);
+  background-color: linear-gradient(to #FF79DA, #9356DC);
 }
 
 @media screen and (min-width: 992px) {

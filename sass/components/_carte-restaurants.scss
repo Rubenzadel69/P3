@@ -36,6 +36,7 @@
             padding-left: 1rem;           
         }
         &__text {
+            width: 80%;
             padding-top: 2%;
             flex-direction: column;
             align-items: flex-start;
@@ -53,6 +54,15 @@
             align-items: flex-end;
             padding-right: 1rem;
             padding-top: 1rem;
+        }
+        i {
+            background-color: transparent;
+            background-clip: icon;
+            -webkit-background-clip: icon;
+            &:active {
+                transform: scaleX(1);
+                background-color: linear-gradient(to #FF79DA, #9356DC);
+            }
         }
 }
 

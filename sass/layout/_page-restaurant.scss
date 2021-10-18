@@ -36,18 +36,19 @@
     box-shadow: 5px 5px 15px lightgrey;
     
     &:hover > .figcaption_valide {
-        width: 30%;
+        width: 25%;
         transform: scaleX(1);
         transform-origin: right;
     }
     .figcaption_left {
-        width: 70%;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         display: block;
         text-decoration: none;                
         font-weight:bold;
         color:black;
+        padding-right: 1%;
     }
         &__descriptif {
             display: flex;
@@ -58,12 +59,11 @@
         width: 2%;
         display: flex;
         align-items: end;
-        font-weight:bold;
+        font-weight: bold;
     }
     .figcaption_valide {
         width: 0;
         overflow: hidden;
-        margin-left: 20%;
         background-color: #99E2D0;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
@@ -74,7 +74,7 @@
         align-items: center;
         transform: scaleX(0);
         transition: transform 1s;
-        
+    
     } 
 }
 
@@ -144,7 +144,6 @@
             text-align: left;
             margin-bottom: 2%;
         }  
-
     }
 }
 
