@@ -1,0 +1,53 @@
+.entree {
+    animation: fadein 3s;
+   
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+
+    }
+    40% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
+
+.plats{
+    animation: fadeinplats 3s;  
+}
+@keyframes fadeinplats{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.desserts{
+     animation: fadeindesserts 3s;
+}
+
+@keyframes fadeindesserts{
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+

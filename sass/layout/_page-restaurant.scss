@@ -36,9 +36,10 @@
     box-shadow: 5px 5px 15px lightgrey;
     
     &:hover > .figcaption_valide {
-        width: 25%;
+        width: 30%;
         transform: scaleX(1);
         transform-origin: right;
+       
     }
     .figcaption_left {
         width: 100%;
@@ -48,19 +49,21 @@
         text-decoration: none;                
         font-weight:bold;
         color:black;
-        padding-right: 1%;
     }
         &__descriptif {
             display: flex;
             font-weight: 150;
             align-items: center;
         }
-    &__prix {
-        width: 2%;
+
+    .figcaption_right {
+        width: 10%;
+        padding-right: 8%;
         display: flex;
+        font-weight: 300;
         align-items: end;
-        font-weight: bold;
-    }
+        font-weight:bold;
+    }    
     .figcaption_valide {
         width: 0;
         overflow: hidden;
@@ -74,7 +77,6 @@
         align-items: center;
         transform: scaleX(0);
         transition: transform 1s;
-    
     } 
 }
 

@@ -9,9 +9,11 @@
 @import "./layout/header-restaurant";
 @import "./layout/presentation-carte";
 @import "./layout/page-restaurant";
+@import "./layout/_animation_deroulement-menu";
 
 @import "./components/photo-restaurant";
 @import "./components/carte-restaurants";
+@import "./components/loading-spinner";
 
 @import "./base/structury";
 
