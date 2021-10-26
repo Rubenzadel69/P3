@@ -35,12 +35,7 @@
     margin-bottom: 1rem;
     box-shadow: 5px 5px 15px lightgrey;
     
-    &:hover > .figcaption_valide {
-        width: 30%;
-        transform: scaleX(1);
-        transform-origin: right;
-       
-    }
+    
     .figcaption_left {
         width: 100%;
         flex-direction: column;
@@ -57,7 +52,6 @@
         }
 
     .figcaption_right {
-        width: 10%;
         padding-right: 8%;
         display: flex;
         font-weight: 300;
@@ -77,19 +71,32 @@
         align-items: center;
         transform: scaleX(0);
         transition: transform 1s;
+        i {
+            transition: transform 300ms;
+            transition-delay: 400ms;
+            transform: rotate(0deg);
+        }
     } 
+    &:hover > .figcaption_valide {
+        width: 30%;
+        transform: scaleX(1);
+        transform-origin: right;
+        i {
+            transform: rotate(720deg);
+        }
+    }
 }
 
 .entree, .plats, .desserts {
     padding-bottom: 1rem;
     h2 {
-    font-weight: 200;
-    font-size: 1em;
-    padding-left: 6%;
-    text-align: left;
+        font-weight: 200;
+        font-size: 1em;
+        padding-left: 6%;
+        text-align: left;
     }
     .line {
-    border-bottom: 0.2em solid $line;
+        border-bottom: 0.2em solid $line;
     } 
 }
 
@@ -128,8 +135,6 @@
         align-items: center;
     }
     .figcaption_right {
-        width: 10%;
-        padding-right: none;
         display: flex;
         font-weight: 300;
         align-items: end;

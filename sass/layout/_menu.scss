@@ -52,16 +52,17 @@
             text-align: center;
         }
         p {
-            width: 40%;   
-            margin-top: 2rem;
-            text-align: center;       
+            width: 30%;   
+            margin-top: 1rem;
+            align-items: center;       
         }
         span {
             color: white;
             background-color: $background-number;
-            margin-left: -10px;
+            margin-left: -11px;
             
-        }      
+        }   
+       
     }
 }
 
