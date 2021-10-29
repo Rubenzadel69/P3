@@ -20,6 +20,7 @@
     padding-bottom: 1rem;    
     border-radius: 1rem;
     background-color: white;
+    box-shadow: 3px 3px 11px lightgrey;
     a {
         text-decoration: none;
         color:black;
@@ -74,7 +75,6 @@
         }
 }
 
-
 @media screen and (min-width: 992px) {
 
     .titre_restaurant { 
@@ -99,7 +99,7 @@
 
     .carte-restaurant {
         margin-bottom: 8rem;
-        width: 45%;
+        width: 40%;
         height: 21rem;
         margin: 1rem;
         padding-bottom: 0;    

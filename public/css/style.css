@@ -52,7 +52,6 @@ footer i {
 
 @media screen and (min-width: 992px) {
   .footer_titre {
-    padding-left: 48%;
     padding-top: 2rem;
     font-size: 2rem;
   }
@@ -63,7 +62,6 @@ footer i {
   footer li {
     line-height: 2rem;
     padding-top: 0.5rem;
-    padding-left: 47%;
   }
   footer li i {
     width: 2%;
@@ -160,6 +158,7 @@ footer i {
   margin-left: auto;
   margin-top: 0;
   border-radius: 25px;
+  align-items: center;
   box-shadow: 5px 5px 15px lightgrey;
 }
 .menu span {
@@ -196,7 +195,7 @@ footer i {
     text-align: center;
   }
   .menu p {
-    width: 30%;
+    width: 27%;
     margin-top: 1rem;
     align-items: center;
   }
@@ -304,6 +303,12 @@ footer i {
   font-size: 115%;
 }
 
+@media screen and (min-width: 992px) {
+  .entete_page {
+    height: 5rem;
+    font-size: 145%;
+  }
+}
 .menu_carte {
   background-color: #F5F5F5;
   width: 100%;
@@ -347,7 +352,7 @@ footer i {
   padding-left: 1rem;
   display: flex;
   margin-bottom: 1rem;
-  box-shadow: 5px 5px 15px lightgrey;
+  box-shadow: 3px 3px 11px lightgrey;
 }
 .carte_choix .figcaption_left {
   width: 100%;
@@ -357,16 +362,18 @@ footer i {
   text-decoration: none;
   font-weight: bold;
   color: black;
+  white-space: nowrap;
+  overflow: scroll;
 }
 .carte_choix__descriptif {
   display: flex;
   font-weight: 150;
   align-items: center;
+  text-overflow: ellipsis;
 }
 .carte_choix .figcaption_right {
   padding-right: 8%;
   display: flex;
-  font-weight: 300;
   align-items: end;
   font-weight: bold;
 }
@@ -408,7 +415,7 @@ footer i {
   text-align: left;
 }
 .entree .line, .plats .line, .desserts .line {
-  border-bottom: 0.2em solid #99E2D0;
+  border-bottom: 0.2em solid #a7c9c0;
 }
 
 @media screen and (min-width: 992px) {
@@ -516,6 +523,11 @@ footer i {
   object-fit: cover;
 }
 
+@media screen and (min-width: 992px) {
+  .photo_restaurant {
+    height: 25rem;
+  }
+}
 .restaurants {
   width: 100%;
   background-color: #F5F5F5;
@@ -537,6 +549,7 @@ footer i {
   padding-bottom: 1rem;
   border-radius: 1rem;
   background-color: white;
+  box-shadow: 3px 3px 11px lightgrey;
 }
 .carte-restaurant a {
   text-decoration: none;
@@ -612,7 +625,7 @@ footer i {
 
   .carte-restaurant {
     margin-bottom: 8rem;
-    width: 45%;
+    width: 40%;
     height: 21rem;
     margin: 1rem;
     padding-bottom: 0;
@@ -649,6 +662,50 @@ footer i {
     margin-right: 1rem;
     align-items: flex-end;
     padding-top: 1rem;
+  }
+}
+.chargement {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 7;
+  animation: 4500ms linear;
+}
+
+@keyframes chargement {
+  0% {
+    width: 0;
+  }
+  1% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.loading-spinner {
+  width: 50px;
+  border: 7px solid #f3f3f3;
+  height: 50px;
+  border-top: 7px solid #88cebb;
+  border-bottom: 7px solid #9356DC;
+  border-radius: 50%;
+  -o-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 body {

@@ -5,16 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-        &__icon {
-            padding-right: 1rem;
-            justify-content: center;
-            align-items: center;
-        }
-        &__input {
-            border: none;
-            background-color: transparent;
-            color: black;
-        }
+    &__icon {
+        padding-right: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    &__input {
+        border: none;
+        background-color: transparent;
+        color: black;
+    }
 }
 
 .exploration {
@@ -46,7 +46,7 @@
         padding-right: 1rem;
         justify-content: center;
         align-items: center;
-         font-size: 150%;
+        font-size: 150%;
     }
     &__input {
         border: none;
