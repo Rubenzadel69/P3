@@ -5,12 +5,13 @@
     padding-left: 2rem;
     padding-right: 2.5rem;
     font-style: italic;
-    h1 {
+    p {
         font-family: Shrikhand;
         text-align: center;
+        font-size: 140%;
     }
     i {
-        font-size: 150%;
+        font-size: 140%;
     }
 }
 
@@ -62,7 +63,7 @@
         align-items: end;
         font-weight: 
         bold;
-        //margin-right: 1rem;
+        margin-right: 1rem;
     }    
     .figcaption_valide {
         width: 0;
@@ -149,6 +150,7 @@
         font-weight: 300;
         align-items: end;
         font-weight:bold;
+        margin-right: 0;
     }    
 }
 

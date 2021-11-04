@@ -32,10 +32,10 @@
             border-top-right-radius: 1rem;
             object-fit: cover;
         }
-        figcaption {
+        .figcaption {
             display: flex;
             padding-left: 1rem;
-            align-items: center;           
+            align-items: center;         
         }
         &__text {
             width: 80%;
@@ -53,14 +53,14 @@
             align-items: center;
             margin-right: 1rem;
             &:hover {
-                #coeur_plein {
+                .coeur_plein {
                     opacity: 1;
                 }
-                #coeur_vide {
+                .coeur_vide {
                     opacity: 0;
                 }  
             }
-            #coeur_plein {
+            .coeur_plein {
                 background: linear-gradient(#FF79DA, #9356DC);
                 background-clip: text;
                 -webkit-background-clip: text;
@@ -68,7 +68,7 @@
                 opacity: 0;
                 transition: all 1s;
             }
-            #coeur_vide {
+            .coeur_vide {
                 opacity: 1;
                 transition-delay: 100ms;
             }

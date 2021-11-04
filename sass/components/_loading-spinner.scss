@@ -9,21 +9,18 @@
     z-index: 7;
     background-color: white;
     top: 0;
-    animation: chargement 3s both;
+    animation: chargement 4s both;
 
     @keyframes chargement {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    
-        z-index: -7;
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            z-index: -7;
+        }
     }
 }
-}
-
-
 
 .loading-spinner {
    width: 50px;
@@ -32,9 +29,7 @@
    border-top: 7px solid $border-top;
    border-bottom: 7px solid $border-bottom;
    border-radius: 50%;
-   
    animation: spin 2s linear infinite;
-   
 }
 
 @keyframes spin {
