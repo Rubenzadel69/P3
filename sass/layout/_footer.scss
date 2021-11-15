@@ -30,9 +30,7 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-    
     .footer_titre {
-        
         padding-top: 2rem;
         font-size: 2rem;
     }
@@ -41,13 +39,18 @@ footer {
         height: 17rem;
         li {
             line-height: 2rem;
-            padding-top: 0.5rem;
-            
+            padding-top: 0.5rem; 
             i {
-            width: 2%;
+            width: 1%;
             padding-right: 0.2;
             }
         }
     }   
+}
 
+@media screen and (min-width: 425px) and (max-width:992px) {
+    footer i {
+        padding-right: 0.3;
+        width: 2%;
+    }
 }
