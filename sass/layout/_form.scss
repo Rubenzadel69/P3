@@ -10,6 +10,9 @@
     margin-right: auto;
     margin-left: auto;
     border: none;
+    &:hover{
+        box-shadow: 5px 10px 10px #D8D4D8;        
+    }
     &__push {
         display: block;
         padding: 2% 2%;

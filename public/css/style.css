@@ -64,7 +64,7 @@ footer i {
     padding-top: 0.5rem;
   }
   footer li i {
-    width: 1%;
+    width: 2%;
     padding-right: 0.2;
   }
 }
@@ -235,6 +235,9 @@ footer i {
   margin-right: auto;
   margin-left: auto;
   border: none;
+}
+.exploration__button:hover {
+  box-shadow: 5px 10px 10px #D8D4D8;
 }
 .exploration__button__push {
   display: block;
