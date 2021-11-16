@@ -9,13 +9,13 @@
 
 @media screen and (min-width: 992px) {
     .header {
-    width: 100%;
-    height: 6rem;
-    justify-content: center;
-    &__logo {
-        font-family: Shrikhand;
-        text-align: center;
-        font-size: 4rem;
+        width: 100%;
+        height: 6rem;
+        justify-content: center;
+        &__logo {
+            font-family: Shrikhand;
+            text-align: center;
+            font-size: 4rem;
+        }
     }
-}
 }
